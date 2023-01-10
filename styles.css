@@ -59,7 +59,34 @@ h4 {
 
 #projects a {
     font-size: 20px;
-    list-style: none;
+}
+
+#projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.project {
+    background-color: rgb(228, 228, 217);
+    width: 400px;
+    margin: 2px;
+    padding: 5px;
+    border: solid 2px black;
+}
+
+/*#project-one-title,
+#project-two-title {
+    text-decoration: underline;
+}*/
+
+#hidden-project-one,
+#hidden-project-two {
+    display: none;
+}
+
+#project-one:hover {
+    display: block;
 }
 
 footer {
@@ -67,4 +94,12 @@ footer {
     border-top: solid 5px black;
     margin-top: 10px;
     background-color: rgb(186, 182, 182);
+}
+
+@media only screen and (max-width: 573px){
+    #nav-links {
+        margin-top: -20px;
+
+    }
+
 }
